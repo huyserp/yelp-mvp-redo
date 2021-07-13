@@ -1,0 +1,8 @@
+<div class="container p5">
+  <h1>Tell us what you think!</h1>
+    <%= simple_form_for [@restaurant, @review] do |f|%>
+    <%= f.input :rating, collection: 0..5 %>
+    <%= f.input :content %>
+    <%= f.submit value: "Post", class: "btn btn-warning"%>
+  <% end %>
+</div>
